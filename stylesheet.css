@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  text-align: center;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url(images/ocean-gb42fba420_1920.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-color: #555;
+  height: 350px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  font-size: 14px;
+  margin: 8px;
+}
+
+h1 {
+  color: #fff;
+}
+
+main {
+  justify-content: center;
+}
+#pictures {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  justify-content: center;
+  margin: auto;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+figure {
+  margin: 8px 4px 0 4px;
+  position: relative;
+}
+
+figure:hover figcaption {
+  visibility: visible;
+  opacity: 100%;
+  transition: 0.2s;
+}
+
+figcaption {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0, transparent);
+  color: #fff;
+}
+
+#search {
+  height: 40px;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  outline: none;
+}
+#colors {
+  height: 40px;
+  width: 150px;
+  margin: 7px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  outline: none;
+}
+button {
+  height: 40px;
+  width: 100px;
+  margin: 7px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px white solid;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+#nav-buttons button {
+  border: rgb(69, 69, 99) 1px solid;
+}
+
+#nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+button:hover {
+  transform: translateY(-0.15em);
+  cursor: pointer;
+}

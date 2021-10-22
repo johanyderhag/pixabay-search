@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your perfect free image with the help of Pixabay. Free for commercial use / No attribution required / High quality images"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Search Pixabay</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pixabay Search</h1>
+      <form action="https://pixabay.com/api/" method="GET">
+        <input type="search" name="search" id="search" placeholder="Search pictures" maxlength="100" />
+        <select id="colors">
+          <option value="">Any color</option>
+          <option value="grayscale">Grayscale</option>
+          <option value="transparent">Transparent</option>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="orange">Orange</option>
+          <option value="green">Green</option>
+          <option value="turquoise">Turquoise</option>
+          <option value="blue">Blue</option>
+          <option value="lilac">Lilac</option>
+          <option value="pink">Pink</option>
+          <option value="white">White</option>
+          <option value="gray">Gray</option>
+          <option value="black">Black</option>
+          <option value="brown">Brown</option>
+        </select>
+        <button type="submit" id="searchButton">Search</button>
+      </form>
+    </header>
+    <main>
+      <div id="pictures"></div>
+
+      <!-- <a href=""  src="" alt=""></a> -->
+      <div id="nav-buttons">
+        <button type="submit" id="previous" disabled hidden>Previous</button>
+        <button type="submit" id="next" disabled hidden>Next</button>
+      </div>
+    </main>
+  </body>
+</html>
